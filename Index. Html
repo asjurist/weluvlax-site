@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeLuvLax</title>
+  <meta name="description" content="WeLuvLax - preppy, feminine lacrosse-inspired apparel and lifestyle brand." />
+  <style>
+    :root {
+      --pink: #f59ac2;
+      --pink-dark: #d96ca0;
+      --brown: #4c362d;
+      --cream: #fff8fc;
+      --soft: #fde8f1;
+      --text: #2e1f28;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(76, 54, 45, 0.10);
+      --radius: 22px;
+    }* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, #fff0f7 0%, #fff8fc 40%, #ffffff 100%);
+  line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 248, 252, 0.84);
+  border-bottom: 1px solid rgba(217, 108, 160, 0.15);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--brown);
+}
+
+.logo span { color: var(--pink-dark); }
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  font-size: 0.98rem;
+  color: #5e4752;
+}
+
+.cta-btn,
+.hero-cta,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-weight: 700;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.cta-btn,
+.hero-cta {
+  background: linear-gradient(135deg, var(--pink), var(--pink-dark));
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.cta-btn:hover,
+.hero-cta:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}
+
+.secondary-btn {
+  border: 1px solid rgba(76, 54, 45, 0.16);
+  background: rgba(255,255,255,0.85);
+  color: var(--brown);
+}
+
+.secondary-btn:hover {
+  transform: translateY(-1px);
+  background: var(--white);
+}
+
+.hero {
+  padding: 72px 0 54px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: var(--soft);
+  color: var(--pink-dark);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.86rem;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--brown);
+}
+
+.hero p {
+  margin: 0 0 26px;
+  font-size: 1.06rem;
+  max-width: 620px;
+  color: #624e57;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-note {
+  font-size: 0.95rem;
+  color: #7b6570;
+}
+
+.card {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(217, 108, 160, 0.14);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-visual {
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(245, 154, 194, 0.18);
+  top: -40px;
+  right: -40px;
+}
+
+.hero-stack {
+  position: relative;
+  display: grid;
+  gap: 16px;
+}
+
+.mockup {
+  border-radius: 20px;
+  padding: 22px;
+  background: linear-gradient(180deg, #fffafd 0%, #fff0f7 100%);
+  border: 1px solid rgba(217, 108, 160, 0.15);
+}
+
+.mockup.dark {
+  background: linear-gradient(180deg, #4b3640 0%, #2e2027 100%);
+  color: white;
+}
+
+.mini-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+  margin-bottom: 12px;
+}
+
+.big-brand {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.big-brand .pink { color: var(--pink); }
+.big-brand .heart { color: var(--pink-dark); }
+
+.tagline {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.section {
+  padding: 22px 0 64px;
+}
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  color: var(--brown);
+}
+
+.section-copy {
+  max-width: 680px;
+  color: #6a5760;
+}
+
+.products,
+.features,
+.social-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.products {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card,
+.feature-card,
+.social-card {
+  padding: 22px;
+}
+
+.product-top {
+  height: 180px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #fde9f2, #fffefe);
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border: 1px solid rgba(217, 108, 160, 0.14);
+  font-weight: 800;
+  color: var(--brown);
+  text-align: center;
+  padding: 14px;
+}
+
+.product-card h3,
+.feature-card h3,
+.social-card h3 {
+  margin: 0 0 10px;
+  color: var(--brown);
+}
+
+.price {
+  font-weight: 800;
+  color: var(--pink-dark);
+  margin-top: 12px;
+}
+
+.features {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  background: var(--soft);
+  margin-bottom: 14px;
+}
+
+.newsletter {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  background: linear-gradient(135deg, #4c362d, #6b4b57);
+  color: white;
+}
+
+.newsletter h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+input[type="email"] {
+  min-width: 260px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  font: inherit;
+}
+
+.social-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+  padding: 28px 0 48px;
+  color: #735d66;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(217, 108, 160, 0.15);
+  padding-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .newsletter,
+  .products,
+  .features,
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .newsletter-form {
+    justify-content: flex-start;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo">We<span>Luv</span>Lax</a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#shop" class="cta-btn">Shop the Drop</a>
+    </div>
+  </header>  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Preppy. Feminine. Lacrosse.</div>
+          <h1>WeLuvLax</h1>
+          <p>
+            A playful, polished lacrosse lifestyle brand built for girls who love the game,
+            the style, and the energy around it. Think elevated hoodies, clean graphics, and a pink-forward identity.
+          </p>
+          <div class="hero-actions">
+            <a href="#shop" class="hero-cta">Shop Coming Soon</a>
+            <a href="#about" class="secondary-btn">See the Brand</a>
+          </div>
+          <div class="hero-note">Launch collection in progress. Apparel, accessories, and team-spirit staples coming soon.</div>
+        </div><div class="card hero-visual">
+      <div class="hero-stack">
+        <div class="mockup dark">
+          <div class="mini-label">Signature mark</div>
+          <div class="big-brand">
+            We<span class="pink">Luv</span>Lax <span class="heart">♡</span>
+          </div>
+          <div class="tagline">Pink-forward apparel with a crisp lacrosse attitude.</div>
+        </div>
+        <div class="mockup">
+          <div class="mini-label">Brand feel</div>
+          <div class="big-brand" style="font-size:1.8rem; color: var(--brown);">Game day, but make it cute.</div>
+          <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lax families.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Featured Pieces</h2>
+        <div class="section-copy">Use these as starter product categories until you add real product photos and checkout links.</div>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="card product-card">
+        <div class="product-top">Signature Hoodie<br/>Pink logo on black</div>
+        <h3>Classic WeLuvLax Hoodie</h3>
+        <p>Soft everyday staple with the core logo treatment. Clean enough for a left-chest version or bold front print.</p>
+        <div class="price">From $48</div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-top">Crewneck Sweatshirt<br/>Preppy athletic fit</div>
+        <h3>Weekend Crew</h3>
+        <p>Simple, polished, and easy to layer. Built for tournament mornings, sidelines, and after-practice comfort.</p>
+        <div class="price">From $42</div>
+      </div>
+
+      <div class="card product-card">
+        <div class="product-top">Accessories & Gifts<br/>Bows, bags, extras</div>
+        <h3>Sideline Essentials</h3>
+        <p>Accessories that carry the same brand energy: sporty, feminine, giftable, and team-friendly.</p>
+        <div class="price">Coming Soon</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>What the Brand Stands For</h2>
+        <div class="section-copy">This section gives the site substance even before you launch full ecommerce.</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="card feature-card">
+        <div class="icon">♡</div>
+        <h3>Feminine Identity</h3>
+        <p>Pink-forward visuals, polished layouts, and a brand style that feels sporty without losing its softness.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="icon">🥍</div>
+        <h3>Lacrosse First</h3>
+        <p>Built around real lacrosse culture, not generic athleticwear. This is for people who actually live the sport.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="icon">✦</div>
+        <h3>Preppy Edge</h3>
+        <p>Clean branding, easy layering, and a refined look that works on campus, at tournaments, and everywhere in between.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card newsletter">
+      <div>
+        <h3>Be first for the launch</h3>
+        <p>Collect emails now, even before the store is fully live. Replace this form action later with Shopify, Mailchimp, or another email platform.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks! You can connect this form later to your email platform.');">
+        <input type="email" placeholder="Enter your email" required>
+        <button class="cta-btn" type="submit">Join the List</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="community">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Community Energy</h2>
+        <div class="section-copy">Placeholder content that makes the brand feel active right away.</div>
+      </div>
+    </div>
+
+    <div class="social-grid">
+      <div class="card social-card">
+        <h3>Tournament Days</h3>
+        <p>Style content, warmups, and sideline fits that turn game-day energy into brand identity.</p>
+      </div>
+      <div class="card social-card">
+        <h3>Team Spirit</h3>
+        <p>Future space for school colors, team collections, or special drops built around programs and events.</p>
+      </div>
+      <div class="card social-card">
+        <h3>Giftable Gear</h3>
+        <p>Perfect for players, parents, and supporters looking for a more elevated lacrosse gift option.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer id="contact">
+    <div class="container footer-row">
+      <div><strong>WeLuvLax</strong> — Lacrosse lifestyle apparel with a feminine, preppy feel.</div>
+      <div>Instagram: @weluvlax &nbsp;|&nbsp; Email: hello@weluvlax.com</div>
+    </div>
+  </footer>
+</body>
+</html>

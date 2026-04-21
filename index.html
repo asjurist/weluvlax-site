@@ -275,7 +275,7 @@
     }
 
     .products {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .product-card,
@@ -285,24 +285,17 @@
     }
 
     .product-top {
-      height: 220px;
+      height: 180px;
       border-radius: 18px;
       background: linear-gradient(135deg, #fde9f2, #fffefe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      place-items: center;
       margin-bottom: 16px;
       border: 1px solid rgba(217, 108, 160, 0.14);
+      font-weight: 800;
+      color: var(--brown);
       text-align: center;
       padding: 14px;
-      overflow: hidden;
-    }
-
-    .product-top img {
-      max-width: 100%;
-      max-height: 190px;
-      object-fit: contain;
-      display: block;
     }
 
     .product-card h3,
@@ -331,18 +324,6 @@
       font-size: 1.3rem;
       background: var(--soft);
       margin-bottom: 14px;
-    }
-
-    .about-long {
-      padding: 28px;
-      margin-bottom: 20px;
-    }
-
-    .about-long p {
-      margin: 0;
-      font-size: 1.04rem;
-      line-height: 1.8;
-      color: #5f4b55;
     }
 
     .newsletter {
@@ -499,13 +480,14 @@
           <div class="eyebrow">Preppy. Feminine. Lacrosse.</div>
           <h1>WeLuvLax</h1>
           <p>
-            Built with heart by a dad of daughters, WeLuvLax is a playful, polished lacrosse lifestyle brand created for girls who love the game, the style, and the energy around it. It is meant to feel proud, feminine, supportive, and real — not like generic sports merch.
+            A playful, polished lacrosse lifestyle brand built for girls who love the game,
+            the style, and the energy around it. Think elevated hoodies, clean graphics, and a pink-forward identity.
           </p>
           <div class="hero-actions">
             <a href="#shop" class="hero-cta">Shop Coming Soon</a>
             <a href="#about" class="secondary-btn">See the Brand</a>
           </div>
-          <div class="hero-note">Inspired by the pride of showing up for daughters who play the girls’ game. Apparel, accessories, and team-spirit staples coming soon.</div>
+          <div class="hero-note">Launch collection in progress. Apparel, accessories, and team-spirit staples coming soon.</div>
         </div>
 
         <div class="card hero-visual">
@@ -526,7 +508,7 @@
             <div class="mockup">
               <div class="mini-label">Brand feel</div>
               <div class="big-brand" style="font-size:1.8rem; color: var(--brown);">Game day, but make it cute.</div>
-              <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lacrosse families.</div>
+              <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lax families.</div>
             </div>
           </div>
         </div>
@@ -544,38 +526,23 @@
 
         <div class="products">
           <div class="card product-card">
-            <div class="product-top">
-              <img src="crewneck-black.png" alt="Black WeLuvLax crew neck">
-            </div>
-            <h3>Classic WeLuvLax Crew Neck</h3>
+            <div class="product-top">Signature Hoodie<br/>Pink logo on black</div>
+            <h3>Classic WeLuvLax Hoodie</h3>
             <p>Soft everyday staple with the core logo treatment. Clean enough for a left-chest version or bold front print.</p>
             <div class="price">From $48</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">
-              <img src="crewneck-blue.png" alt="Blue WeLuvLax crew neck">
-            </div>
+            <div class="product-top">Crewneck Sweatshirt<br/>Preppy athletic fit</div>
             <h3>Weekend Crew</h3>
             <p>Simple, polished, and easy to layer. Built for tournament mornings, sidelines, and after-practice comfort.</p>
             <div class="price">From $42</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">
-              <img src="crewneck-cream-front.png" alt="Cream crew neck front graphic">
-            </div>
-            <h3>Cream Front Crew</h3>
-            <p>Soft neutral base with the logo treatment positioned for a polished storefront look.</p>
-            <div class="price">Coming Soon</div>
-          </div>
-
-          <div class="card product-card">
-            <div class="product-top">
-              <img src="crewneck-cream-chest.png" alt="Cream crew neck with left chest graphic">
-            </div>
-            <h3>Cream Chest Crew</h3>
-            <p>A quieter, preppier version that feels more premium and easy to wear every day.</p>
+            <div class="product-top">Accessories & Gifts<br/>Bows, bags, extras</div>
+            <h3>Sideline Essentials</h3>
+            <p>Accessories that carry the same brand energy: sporty, feminine, giftable, and team-friendly.</p>
             <div class="price">Coming Soon</div>
           </div>
         </div>
@@ -586,32 +553,26 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <h2>About WeLuvLax</h2>
-            <div class="section-copy">A brand built from real pride in the girls’ game.</div>
+            <h2>What the Brand Stands For</h2>
+            <div class="section-copy">This section gives the site substance even before you launch full ecommerce.</div>
           </div>
-        </div>
-
-        <div class="card about-long">
-          <p>
-            Built with heart by a dad of daughters, WeLuvLax is more than just a lacrosse apparel idea. It comes from wanting something that feels true to the girls’ game — something feminine, polished, supportive, and proud. Too much sports gear feels generic, overly aggressive, or disconnected from the actual culture around girls lacrosse. WeLuvLax is meant to feel different. It is for players who love the sport, for families who live on the sidelines and at tournaments, and for anyone who wants apparel and accessories that reflect the energy, pride, and style that surround the game. The goal is to create pieces that feel clean, elevated, giftable, and genuinely connected to girls lacrosse culture.
-          </p>
         </div>
 
         <div class="features">
           <div class="card feature-card">
             <div class="icon">♡</div>
             <h3>Feminine Identity</h3>
-            <p>A softer, more polished identity that feels true to girls lacrosse and does not reduce it to plain team gear.</p>
+            <p>Pink-forward visuals, polished layouts, and a brand style that feels sporty without losing its softness.</p>
           </div>
           <div class="card feature-card">
             <div class="icon">🥍</div>
             <h3>Lacrosse First</h3>
-            <p>Built around real girls lacrosse culture, the families around it, and the pride that comes from supporting daughters who play.</p>
+            <p>Built around real lacrosse culture, not generic athleticwear. This is for people who actually live the sport.</p>
           </div>
           <div class="card feature-card">
             <div class="icon">✦</div>
             <h3>Preppy Edge</h3>
-            <p>Clean branding, easy layering, and a refined look that feels elevated enough for gifts, sidelines, tournaments, and everyday wear.</p>
+            <p>Clean branding, easy layering, and a refined look that works on campus, at tournaments, and everywhere in between.</p>
           </div>
         </div>
       </div>

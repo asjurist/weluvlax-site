@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeLuvLax</title>
-  <meta name="description" content="WeLuvLax - preppy, feminine lacrosse-inspired apparel and lifestyle brand." />
+  <title>WeLuvLax | Preppy Feminine Lacrosse Apparel</title>
+  <meta
+    name="description"
+    content="WeLuvLax is a preppy, feminine lacrosse-inspired apparel and lifestyle brand for girls, players, families, and fans of the girls' game."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://weluvlax.com/" />
   <style>
     :root {
       --pink: #f59ac2;
@@ -20,16 +25,27 @@
 
     * { box-sizing: border-box; }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background:
-        radial-gradient(circle at top left, #fff0f7 0%, #fff8fc 40%, #ffffff 100%);
+      background: radial-gradient(circle at top left, #fff0f7 0%, #fff8fc 40%, #ffffff 100%);
       line-height: 1.5;
     }
 
-    a { text-decoration: none; color: inherit; }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
     .container {
       width: min(1120px, calc(100% - 32px));
@@ -58,15 +74,19 @@
       font-weight: 800;
       letter-spacing: 0.04em;
       color: var(--brown);
+      white-space: nowrap;
     }
 
-    .logo span { color: var(--pink-dark); }
+    .logo span {
+      color: var(--pink-dark);
+    }
 
     .nav-links {
       display: flex;
       gap: 22px;
       font-size: 0.98rem;
       color: #5e4752;
+      flex-wrap: wrap;
     }
 
     .cta-btn,
@@ -97,7 +117,7 @@
 
     .secondary-btn {
       border: 1px solid rgba(76, 54, 45, 0.16);
-      background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.85);
       color: var(--brown);
     }
 
@@ -156,7 +176,7 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.92);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid rgba(217, 108, 160, 0.14);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -217,7 +237,6 @@
       width: 170px;
       max-width: 100%;
       height: auto;
-      display: block;
       filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.18));
     }
 
@@ -275,7 +294,7 @@
     }
 
     .products {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .product-card,
@@ -302,7 +321,6 @@
       max-width: 100%;
       max-height: 190px;
       object-fit: contain;
-      display: block;
       border-radius: 12px;
     }
 
@@ -320,7 +338,7 @@
     }
 
     .features {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .icon {
@@ -383,7 +401,7 @@
     }
 
     .social-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .social-links {
@@ -400,7 +418,7 @@
       min-height: 54px;
       padding: 12px 18px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.92);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid rgba(76, 54, 45, 0.16);
       color: var(--brown);
       font-weight: 700;
@@ -456,10 +474,15 @@
       padding-top: 22px;
     }
 
+    @media (max-width: 1100px) {
+      .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 900px) {
       .hero-grid,
       .newsletter,
-      .products,
       .features,
       .social-grid {
         grid-template-columns: 1fr;
@@ -475,6 +498,26 @@
 
       .top-icon {
         width: 140px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+      }
+
+      .cta-btn,
+      .hero-cta,
+      .secondary-btn {
+        width: 100%;
+      }
+
+      input[type="email"] {
+        min-width: 100%;
       }
     }
   </style>
@@ -506,7 +549,9 @@
             <a href="#shop" class="hero-cta">Shop Coming Soon</a>
             <a href="#about" class="secondary-btn">See the Brand</a>
           </div>
-          <div class="hero-note">Inspired by the pride of showing up for daughters who play the girls’ game. Apparel, accessories, and team-spirit staples coming soon.</div>
+          <div class="hero-note">
+            Inspired by the pride of showing up for daughters who play the girls’ game. Apparel, accessories, and team-spirit staples coming soon.
+          </div>
         </div>
 
         <div class="card hero-visual">
@@ -514,7 +559,7 @@
             <div class="mockup dark">
               <div class="mini-label">Signature mark</div>
               <div class="top-icon-wrap">
-                <img src="icon-heart.png" alt="WeLuvLax icon" class="top-icon">
+                <img src="icon-heart.png" alt="WeLuvLax icon" class="top-icon" />
               </div>
               <div class="big-brand large">
                 We<span class="pink">Luv</span>Lax <span class="heart">♡</span>
@@ -524,8 +569,12 @@
 
             <div class="mockup">
               <div class="mini-label">Brand feel</div>
-              <div class="big-brand" style="font-size:1.8rem; color: var(--brown);">Game day, but make it cute.</div>
-              <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lacrosse families.</div>
+              <div class="big-brand" style="font-size: 1.8rem; color: var(--brown);">
+                Game day, but make it cute.
+              </div>
+              <div class="tagline">
+                Clean, feminine pieces designed for players, fans, and proud lacrosse families.
+              </div>
             </div>
           </div>
         </div>
@@ -537,44 +586,54 @@
         <div class="section-head">
           <div>
             <h2>Featured Pieces</h2>
-            <div class="section-copy">Use these as starter product categories until you add real product photos and checkout links.</div>
+            <div class="section-copy">
+              Use these as starter product categories until you add real product photos and checkout links.
+            </div>
           </div>
         </div>
 
         <div class="products">
           <div class="card product-card">
             <div class="product-top">
-              <img src="cream-full-logo-crewneck.png" alt="Cream full logo crewneck">
+              <img src="cream-full-logo-crewneck.png" alt="Cream full logo crewneck" />
             </div>
             <h3>Full Logo Crew</h3>
-            <p>Soft neutral base with the signature pink WeLuvLax logo across the front for a clean, feminine look.</p>
+            <p>
+              Soft neutral base with the signature pink WeLuvLax logo across the front for a clean, feminine look.
+            </p>
             <div class="price">Coming Soon</div>
           </div>
 
           <div class="card product-card">
             <div class="product-top">
-              <img src="black-full-logo-crewneck.png" alt="Black full logo crewneck">
+              <img src="black-full-logo-crewneck.png" alt="Black full logo crewneck" />
             </div>
             <h3>Black Full Logo Crew</h3>
-            <p>A bold classic with the pink logo standing out against black for a more striking everyday piece.</p>
+            <p>
+              A bold classic with the pink logo standing out against black for a more striking everyday piece.
+            </p>
             <div class="price">Coming Soon</div>
           </div>
 
           <div class="card product-card">
             <div class="product-top">
-              <img src="carolina-blue-full-logo-crewneck.png" alt="Carolina blue full logo crewneck">
+              <img src="carolina-blue-full-logo-crewneck.png" alt="Carolina blue full logo crewneck" />
             </div>
             <h3>Carolina Blue Full Logo Crew</h3>
-            <p>Bright, sporty, and soft with the pink logo treatment that keeps the look playful and polished.</p>
+            <p>
+              Bright, sporty, and soft with the pink logo treatment that keeps the look playful and polished.
+            </p>
             <div class="price">Coming Soon</div>
           </div>
 
           <div class="card product-card">
             <div class="product-top">
-              <img src="chest-crewnecks-group.png" alt="Chest logo crew necks group image">
+              <img src="chest-crewnecks-group.png" alt="Chest logo crew necks group image" />
             </div>
             <h3>Chest Logo Crew Necks</h3>
-            <p>Cream, Carolina blue, and pastel green with the smaller chest logo placement for a cleaner, preppier look.</p>
+            <p>
+              Cream, Carolina blue, and pastel green with the smaller chest logo placement for a cleaner, preppier look.
+            </p>
             <div class="price">Coming Soon</div>
           </div>
         </div>
@@ -600,17 +659,25 @@
           <div class="card feature-card">
             <div class="icon">♡</div>
             <h3>Feminine Identity</h3>
-            <p>A softer, more polished identity that feels true to girls lacrosse and does not reduce it to plain team gear.</p>
+            <p>
+              A softer, more polished identity that feels true to girls lacrosse and does not reduce it to plain team gear.
+            </p>
           </div>
+
           <div class="card feature-card">
             <div class="icon">🥍</div>
             <h3>Lacrosse First</h3>
-            <p>Built around real girls lacrosse culture, the families around it, and the pride that comes from supporting daughters who play.</p>
+            <p>
+              Built around real girls lacrosse culture, the families around it, and the pride that comes from supporting daughters who play.
+            </p>
           </div>
+
           <div class="card feature-card">
             <div class="icon">✦</div>
             <h3>Preppy Edge</h3>
-            <p>Clean branding, easy layering, and a refined look that feels elevated enough for gifts, sidelines, tournaments, and everyday wear.</p>
+            <p>
+              Clean branding, easy layering, and a refined look that feels elevated enough for gifts, sidelines, tournaments, and everyday wear.
+            </p>
           </div>
         </div>
       </div>
@@ -621,10 +688,12 @@
         <div class="card newsletter">
           <div>
             <h3>Be first for the launch</h3>
-            <p>Collect emails now, even before the store is fully live. Replace this form action later with Shopify, Mailchimp, or another email platform.</p>
+            <p>
+              Collect emails now, even before the store is fully live. Replace this form action later with Shopify, Mailchimp, or another email platform.
+            </p>
           </div>
           <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks! You can connect this form later to your email platform.');">
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your email" required />
             <button class="cta-btn" type="submit">Join the List</button>
           </form>
         </div>
@@ -645,10 +714,12 @@
             <h3>Tournament Days</h3>
             <p>Style content, warmups, and sideline fits that turn game-day energy into brand identity.</p>
           </div>
+
           <div class="card social-card">
             <h3>Team Spirit</h3>
             <p>Future space for school colors, team collections, or special drops built around programs and events.</p>
           </div>
+
           <div class="card social-card">
             <h3>Giftable Gear</h3>
             <p>Perfect for players, parents, and supporters looking for a more elevated lacrosse gift option.</p>
@@ -661,10 +732,11 @@
   <footer id="contact">
     <div class="container">
       <div class="card" style="padding: 28px; margin-bottom: 22px;">
-        <h2 style="margin-top:0; color: var(--brown);">Follow WeLuvLax</h2>
-        <p style="color:#6f5a64; margin-bottom:18px;">Connect with the brand across social and email.</p>
+        <h2 style="margin-top: 0; color: var(--brown);">Follow WeLuvLax</h2>
+        <p style="color: #6f5a64; margin-bottom: 18px;">Connect with the brand across social and email.</p>
+
         <div class="social-links">
-          <a class="social-icon-link" href="https://instagram.com/weluvlax" target="_blank" aria-label="Instagram">
+          <a class="social-icon-link" href="https://instagram.com/weluvlax" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <span class="social-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2z"/></svg>
             </span>
@@ -678,14 +750,14 @@
             <span>Email</span>
           </a>
 
-          <a class="social-icon-link" href="https://x.com/weluvlax" target="_blank" aria-label="X">
+          <a class="social-icon-link" href="https://x.com/weluvlax" target="_blank" rel="noopener noreferrer" aria-label="X">
             <span class="social-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-7.4L5.58 22H2.46l7.24-8.28L1 2h6.4l4.43 6.74L18.9 2zm-1.1 18h1.73L6.45 3.9H4.6L17.8 20z"/></svg>
             </span>
             <span>X</span>
           </a>
 
-          <a class="social-icon-link" href="https://tiktok.com/@shopweluvlax" target="_blank" aria-label="TikTok">
+          <a class="social-icon-link" href="https://tiktok.com/@shopweluvlax" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
             <span class="social-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 2h3.05c.24 1.98 1.33 3.55 3.45 3.82v3.1c-1.48-.05-2.84-.46-4-1.2v7.18a6.3 6.3 0 1 1-6.3-6.3c.3 0 .6.03.9.08v3.2a3.24 3.24 0 0 0-.9-.13 3.15 3.15 0 1 0 3.15 3.15V2z"/></svg>
             </span>
@@ -697,10 +769,10 @@
       <div class="footer-row">
         <div><strong>WeLuvLax</strong> — Lacrosse lifestyle apparel with a feminine, preppy feel.</div>
         <div class="footer-inline-links">
-          <a href="https://instagram.com/weluvlax" target="_blank">Instagram</a>
+          <a href="https://instagram.com/weluvlax" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="mailto:hello@weluvlax.com">hello@weluvlax.com</a>
-          <a href="https://x.com/weluvlax" target="_blank">X</a>
-          <a href="https://tiktok.com/@shopweluvlax" target="_blank">TikTok</a>
+          <a href="https://x.com/weluvlax" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://tiktok.com/@shopweluvlax" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
       </div>
     </div>

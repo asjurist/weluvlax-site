@@ -275,7 +275,7 @@
     }
 
     .products {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
 
     .product-card,
@@ -285,17 +285,24 @@
     }
 
     .product-top {
-      height: 180px;
+      height: 220px;
       border-radius: 18px;
       background: linear-gradient(135deg, #fde9f2, #fffefe);
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 16px;
       border: 1px solid rgba(217, 108, 160, 0.14);
-      font-weight: 800;
-      color: var(--brown);
       text-align: center;
       padding: 14px;
+      overflow: hidden;
+    }
+
+    .product-top img {
+      max-width: 100%;
+      max-height: 190px;
+      object-fit: contain;
+      display: block;
     }
 
     .product-card h3,
@@ -324,6 +331,18 @@
       font-size: 1.3rem;
       background: var(--soft);
       margin-bottom: 14px;
+    }
+
+    .about-long {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-long p {
+      margin: 0;
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: #5f4b55;
     }
 
     .newsletter {
@@ -525,23 +544,38 @@
 
         <div class="products">
           <div class="card product-card">
-            <div class="product-top">Signature Hoodie<br/>Pink logo on black</div>
-            <h3>Classic WeLuvLax Hoodie</h3>
+            <div class="product-top">
+              <img src="crewneck-black.png" alt="Black WeLuvLax crew neck">
+            </div>
+            <h3>Classic WeLuvLax Crew Neck</h3>
             <p>Soft everyday staple with the core logo treatment. Clean enough for a left-chest version or bold front print.</p>
             <div class="price">From $48</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">Crewneck Sweatshirt<br/>Preppy athletic fit</div>
+            <div class="product-top">
+              <img src="crewneck-blue.png" alt="Blue WeLuvLax crew neck">
+            </div>
             <h3>Weekend Crew</h3>
             <p>Simple, polished, and easy to layer. Built for tournament mornings, sidelines, and after-practice comfort.</p>
             <div class="price">From $42</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">Accessories & Gifts<br/>Bows, bags, extras</div>
-            <h3>Sideline Essentials</h3>
-            <p>Accessories that carry the same brand energy: sporty, feminine, giftable, and team-friendly.</p>
+            <div class="product-top">
+              <img src="crewneck-cream-front.png" alt="Cream crew neck front graphic">
+            </div>
+            <h3>Cream Front Crew</h3>
+            <p>Soft neutral base with the logo treatment positioned for a polished storefront look.</p>
+            <div class="price">Coming Soon</div>
+          </div>
+
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="crewneck-cream-chest.png" alt="Cream crew neck with left chest graphic">
+            </div>
+            <h3>Cream Chest Crew</h3>
+            <p>A quieter, preppier version that feels more premium and easy to wear every day.</p>
             <div class="price">Coming Soon</div>
           </div>
         </div>
@@ -552,9 +586,15 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <h2>What the Brand Stands For</h2>
-            <div class="section-copy">WeLuvLax comes from the perspective of a dad of daughters who wanted something that feels proud, feminine, sporty, and genuinely connected to girls lacrosse culture.</div>
+            <h2>About WeLuvLax</h2>
+            <div class="section-copy">A brand built from real pride in the girls’ game.</div>
           </div>
+        </div>
+
+        <div class="card about-long">
+          <p>
+            Built with heart by a dad of daughters, WeLuvLax is more than just a lacrosse apparel idea. It comes from wanting something that feels true to the girls’ game — something feminine, polished, supportive, and proud. Too much sports gear feels generic, overly aggressive, or disconnected from the actual culture around girls lacrosse. WeLuvLax is meant to feel different. It is for players who love the sport, for families who live on the sidelines and at tournaments, and for anyone who wants apparel and accessories that reflect the energy, pride, and style that surround the game. The goal is to create pieces that feel clean, elevated, giftable, and genuinely connected to girls lacrosse culture.
+          </p>
         </div>
 
         <div class="features">

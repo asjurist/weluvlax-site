@@ -285,17 +285,25 @@
     }
 
     .product-top {
-      height: 180px;
+      height: 220px;
       border-radius: 18px;
       background: linear-gradient(135deg, #fde9f2, #fffefe);
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 16px;
       border: 1px solid rgba(217, 108, 160, 0.14);
-      font-weight: 800;
-      color: var(--brown);
       text-align: center;
       padding: 14px;
+      overflow: hidden;
+    }
+
+    .product-top img {
+      max-width: 100%;
+      max-height: 190px;
+      object-fit: contain;
+      display: block;
+      border-radius: 12px;
     }
 
     .product-card h3,
@@ -324,6 +332,18 @@
       font-size: 1.3rem;
       background: var(--soft);
       margin-bottom: 14px;
+    }
+
+    .about-long {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-long p {
+      margin: 0;
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: #5f4b55;
     }
 
     .newsletter {
@@ -480,25 +500,22 @@
           <div class="eyebrow">Preppy. Feminine. Lacrosse.</div>
           <h1>WeLuvLax</h1>
           <p>
-            A playful, polished lacrosse lifestyle brand built for girls who love the game,
-            the style, and the energy around it. Think elevated hoodies, clean graphics, and a pink-forward identity.
+            Built with heart by a dad of daughters, WeLuvLax is a playful, polished lacrosse lifestyle brand created for girls who love the game, the style, and the energy around it. It is meant to feel proud, feminine, supportive, and real — not like generic sports merch.
           </p>
           <div class="hero-actions">
             <a href="#shop" class="hero-cta">Shop Coming Soon</a>
             <a href="#about" class="secondary-btn">See the Brand</a>
           </div>
-          <div class="hero-note">Launch collection in progress. Apparel, accessories, and team-spirit staples coming soon.</div>
+          <div class="hero-note">Inspired by the pride of showing up for daughters who play the girls’ game. Apparel, accessories, and team-spirit staples coming soon.</div>
         </div>
 
         <div class="card hero-visual">
           <div class="hero-stack">
             <div class="mockup dark">
               <div class="mini-label">Signature mark</div>
-
               <div class="top-icon-wrap">
                 <img src="icon-heart.png" alt="WeLuvLax icon" class="top-icon">
               </div>
-
               <div class="big-brand large">
                 We<span class="pink">Luv</span>Lax <span class="heart">♡</span>
               </div>
@@ -508,7 +525,7 @@
             <div class="mockup">
               <div class="mini-label">Brand feel</div>
               <div class="big-brand" style="font-size:1.8rem; color: var(--brown);">Game day, but make it cute.</div>
-              <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lax families.</div>
+              <div class="tagline">Clean, feminine pieces designed for players, fans, and proud lacrosse families.</div>
             </div>
           </div>
         </div>
@@ -526,23 +543,38 @@
 
         <div class="products">
           <div class="card product-card">
-            <div class="product-top">Signature Hoodie<br/>Pink logo on black</div>
-            <h3>Classic WeLuvLax Hoodie</h3>
-            <p>Soft everyday staple with the core logo treatment. Clean enough for a left-chest version or bold front print.</p>
-            <div class="price">From $48</div>
+            <div class="product-top">
+              <img src="cream-full-logo-crewneck.png" alt="Cream full logo crewneck">
+            </div>
+            <h3>Full Logo Crew</h3>
+            <p>Soft neutral base with the signature pink WeLuvLax logo across the front for a clean, feminine look.</p>
+            <div class="price">Coming Soon</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">Crewneck Sweatshirt<br/>Preppy athletic fit</div>
-            <h3>Weekend Crew</h3>
-            <p>Simple, polished, and easy to layer. Built for tournament mornings, sidelines, and after-practice comfort.</p>
-            <div class="price">From $42</div>
+            <div class="product-top">
+              <img src="black-full-logo-crewneck.png" alt="Black full logo crewneck">
+            </div>
+            <h3>Black Full Logo Crew</h3>
+            <p>A bold classic with the pink logo standing out against black for a more striking everyday piece.</p>
+            <div class="price">Coming Soon</div>
           </div>
 
           <div class="card product-card">
-            <div class="product-top">Accessories & Gifts<br/>Bows, bags, extras</div>
-            <h3>Sideline Essentials</h3>
-            <p>Accessories that carry the same brand energy: sporty, feminine, giftable, and team-friendly.</p>
+            <div class="product-top">
+              <img src="carolina-blue-full-logo-crewneck.png" alt="Carolina blue full logo crewneck">
+            </div>
+            <h3>Carolina Blue Full Logo Crew</h3>
+            <p>Bright, sporty, and soft with the pink logo treatment that keeps the look playful and polished.</p>
+            <div class="price">Coming Soon</div>
+          </div>
+
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="chest-crewnecks-group.png" alt="Chest logo crew necks group image">
+            </div>
+            <h3>Chest Logo Crew Necks</h3>
+            <p>Cream, Carolina blue, and pastel green with the smaller chest logo placement for a cleaner, preppier look.</p>
             <div class="price">Coming Soon</div>
           </div>
         </div>
@@ -553,26 +585,32 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <h2>What the Brand Stands For</h2>
-            <div class="section-copy">This section gives the site substance even before you launch full ecommerce.</div>
+            <h2>About WeLuvLax</h2>
+            <div class="section-copy">A brand built from real pride in the girls’ game.</div>
           </div>
+        </div>
+
+        <div class="card about-long">
+          <p>
+            Built with heart by a dad of daughters, WeLuvLax is more than just a lacrosse apparel idea. It comes from wanting something that feels true to the girls’ game — something feminine, polished, supportive, and proud. Too much sports gear feels generic, overly aggressive, or disconnected from the actual culture around girls lacrosse. WeLuvLax is meant to feel different. It is for players who love the sport, for families who live on the sidelines and at tournaments, and for anyone who wants apparel and accessories that reflect the energy, pride, and style that surround the game. The goal is to create pieces that feel clean, elevated, giftable, and genuinely connected to girls lacrosse culture.
+          </p>
         </div>
 
         <div class="features">
           <div class="card feature-card">
             <div class="icon">♡</div>
             <h3>Feminine Identity</h3>
-            <p>Pink-forward visuals, polished layouts, and a brand style that feels sporty without losing its softness.</p>
+            <p>A softer, more polished identity that feels true to girls lacrosse and does not reduce it to plain team gear.</p>
           </div>
           <div class="card feature-card">
             <div class="icon">🥍</div>
             <h3>Lacrosse First</h3>
-            <p>Built around real lacrosse culture, not generic athleticwear. This is for people who actually live the sport.</p>
+            <p>Built around real girls lacrosse culture, the families around it, and the pride that comes from supporting daughters who play.</p>
           </div>
           <div class="card feature-card">
             <div class="icon">✦</div>
             <h3>Preppy Edge</h3>
-            <p>Clean branding, easy layering, and a refined look that works on campus, at tournaments, and everywhere in between.</p>
+            <p>Clean branding, easy layering, and a refined look that feels elevated enough for gifts, sidelines, tournaments, and everyday wear.</p>
           </div>
         </div>
       </div>
@@ -659,33 +697,10 @@
       <div class="footer-row">
         <div><strong>WeLuvLax</strong> — Lacrosse lifestyle apparel with a feminine, preppy feel.</div>
         <div class="footer-inline-links">
-          <a href="https://instagram.com/weluvlax" target="_blank" aria-label="Instagram">
-            <span class="social-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2z"/></svg>
-            </span>
-            <span>Instagram</span>
-          </a>
-
-          <a href="mailto:hello@weluvlax.com" aria-label="Email">
-            <span class="social-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.35l9 6.3 9-6.3V7H3zm18 10V9.95l-8.43 5.9a1 1 0 0 1-1.14 0L3 9.95V17h18z"/></svg>
-            </span>
-            <span>hello@weluvlax.com</span>
-          </a>
-
-          <a href="https://x.com/weluvlax" target="_blank" aria-label="X">
-            <span class="social-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-7.4L5.58 22H2.46l7.24-8.28L1 2h6.4l4.43 6.74L18.9 2zm-1.1 18h1.73L6.45 3.9H4.6L17.8 20z"/></svg>
-            </span>
-            <span>X</span>
-          </a>
-
-          <a href="https://tiktok.com/@shopweluvlax" target="_blank" aria-label="TikTok">
-            <span class="social-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 2h3.05c.24 1.98 1.33 3.55 3.45 3.82v3.1c-1.48-.05-2.84-.46-4-1.2v7.18a6.3 6.3 0 1 1-6.3-6.3c.3 0 .6.03.9.08v3.2a3.24 3.24 0 0 0-.9-.13 3.15 3.15 0 1 0 3.15 3.15V2z"/></svg>
-            </span>
-            <span>TikTok</span>
-          </a>
+          <a href="https://instagram.com/weluvlax" target="_blank">Instagram</a>
+          <a href="mailto:hello@weluvlax.com">hello@weluvlax.com</a>
+          <a href="https://x.com/weluvlax" target="_blank">X</a>
+          <a href="https://tiktok.com/@shopweluvlax" target="_blank">TikTok</a>
         </div>
       </div>
     </div>

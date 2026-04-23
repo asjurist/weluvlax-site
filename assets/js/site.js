@@ -6,7 +6,14 @@
     bluecrew: { id: 'bluecrew', name: 'Carolina Blue Full Logo Crew', price: 58, image: 'assets/images/carolina_blue_full_logo_crewneck.png' },
     fittedtee: { id: 'fittedtee', name: 'Define Yourself Fitted Tee', price: 36, image: 'assets/images/pink_define_yourself_fitted_tee.png' },
     shorts: { id: 'shorts', name: 'Luv the Game Shorts', price: 34, image: 'assets/images/carolina_blue_luv_the_game_shorts.png' },
-    sweatpants: { id: 'sweatpants', name: 'Play with Heart Sweatpants', price: 52, image: 'assets/images/cream_play_with_heart_sweatpants.png' }
+    sweatpants: { id: 'sweatpants', name: 'Play with Heart Win with Grace Sweatpants', price: 52, image: 'assets/images/cream_play_with_heart_sweatpants.png' },
+    whitetank: { id: 'whitetank', name: 'Luv the Game Ribbed Tank', price: 34, image: 'assets/images/white_ribbed_luv_the_game_tank.png' },
+    pinktank: { id: 'pinktank', name: 'Define Yourself Tank', price: 34, image: 'assets/images/pink_define_yourself_tank.png' },
+    powertee: { id: 'powertee', name: 'Power and Finesse Tee', price: 38, image: 'assets/images/cream_power_and_finesse_tee.png' },
+    gracetee: { id: 'gracetee', name: 'Play with Heart Win with Grace Tee', price: 38, image: 'assets/images/carolina_blue_play_with_heart_tee.png' },
+    blackhat: { id: 'blackhat', name: 'Define Yourself Hat', price: 30, image: 'assets/images/black_define_yourself_hat.png' },
+    pinkhat: { id: 'pinkhat', name: 'Luv the Game Hat', price: 30, image: 'assets/images/pink_luv_the_game_hat.png' },
+    creamhat: { id: 'creamhat', name: 'Signature WeLuvLax Hat', price: 30, image: 'assets/images/cream_signature_hat.png' },
   };
 
   const money = value => `$${value.toFixed(2)}`;

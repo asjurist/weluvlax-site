@@ -27,3 +27,9 @@ The corrected sweatpants mockup is included.
 The lineup now includes tanks tees shorts sweatpants and hats.
 
 This version adds Instagram TikTok X and Facebook logos with links in the footer and updates the homepage featured lineup to show a sweatshirt, tank, tee, sweatpants, and a hat.
+
+This version refines the contact icons so they are smaller, aligned, and cleaner, and adds an email icon with a mailto link.
+
+This version upgrades the contact area with a more luxurious footer presentation while keeping all links and icons in place.
+
+This version upgrades the entire footer with a more editorial and high end layout across all pages.

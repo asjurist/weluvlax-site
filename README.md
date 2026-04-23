@@ -25,3 +25,5 @@ Included pages
 Image assets are already named to match the HTML.
 The corrected sweatpants mockup is included.
 The lineup now includes tanks tees shorts sweatpants and hats.
+
+This version adds Instagram TikTok X and Facebook logos with links in the footer and updates the homepage featured lineup to show a sweatshirt, tank, tee, sweatpants, and a hat.

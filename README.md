@@ -33,3 +33,5 @@ This version refines the contact icons so they are smaller, aligned, and cleaner
 This version upgrades the contact area with a more luxurious footer presentation while keeping all links and icons in place.
 
 This version upgrades the entire footer with a more editorial and high end layout across all pages.
+
+This version updates the brand story language to say that the brand was built with heart by a dad and coach of two daughters who have played the game from a young age and still do to this day.

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeLuvLax | Power and Finesse</title>
+  <meta
+    name="description"
+    content="WeLuvLax is a preppy feminine lacrosse apparel and lifestyle brand inspired by the girls game and built around power and finesse, heart and grace."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://weluvlax.com/" />
+  <meta property="og:title" content="WeLuvLax | Power and Finesse" />
+  <meta property="og:description" content="Preppy feminine lacrosse apparel built on power and finesse, heart and grace, and a real love of the girls game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://weluvlax.com/" />
+  <meta property="og:image" content="https://weluvlax.com/icon-heart.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#f59ac2" />
+  <style>
+    :root {
+      --pink: #f59ac2;
+      --pink-dark: #d96ca0;
+      --brown: #4c362d;
+      --cream: #fff8fc;
+      --soft: #fde8f1;
+      --text: #2e1f28;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(76, 54, 45, 0.10);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #fff0f7 0%, #fff8fc 40%, #ffffff 100%);
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 248, 252, 0.88);
+      border-bottom: 1px solid rgba(217, 108, 160, 0.15);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--brown);
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--pink-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 0.98rem;
+      color: #5e4752;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn,
+    .hero-cta,
+    .secondary-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .cta-btn,
+    .hero-cta {
+      background: linear-gradient(135deg, var(--pink), var(--pink-dark));
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-btn:hover,
+    .hero-cta:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.02);
+    }
+
+    .secondary-btn {
+      border: 1px solid rgba(76, 54, 45, 0.16);
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--brown);
+    }
+
+    .secondary-btn:hover {
+      transform: translateY(-1px);
+      background: var(--white);
+    }
+
+    .hero {
+      padding: 72px 0 54px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--pink-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.86rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--brown);
+    }
+
+    .hero p {
+      margin: 0 0 26px;
+      font-size: 1.06rem;
+      max-width: 640px;
+      color: #624e57;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .hero-note {
+      font-size: 0.95rem;
+      color: #7b6570;
+      margin-bottom: 26px;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(217,108,160,0.16);
+      color: var(--brown);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(217, 108, 160, 0.14);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-visual {
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(245, 154, 194, 0.18);
+      top: -50px;
+      right: -50px;
+    }
+
+    .hero-stack {
+      position: relative;
+      display: grid;
+      gap: 18px;
+    }
+
+    .mockup {
+      border-radius: 20px;
+      padding: 22px;
+      background: linear-gradient(180deg, #fffafd 0%, #fff0f7 100%);
+      border: 1px solid rgba(217, 108, 160, 0.15);
+    }
+
+    .mockup.dark {
+      background: linear-gradient(180deg, #4b3640 0%, #2e2027 100%);
+      color: white;
+      padding: 30px 28px;
+    }
+
+    .mini-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.75;
+      margin-bottom: 12px;
+    }
+
+    .top-icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .top-icon {
+      width: 170px;
+      max-width: 100%;
+      height: auto;
+      filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.18));
+    }
+
+    .big-brand {
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .big-brand.large {
+      font-size: clamp(2.8rem, 7vw, 4.7rem);
+      margin-bottom: 14px;
+    }
+
+    .big-brand .pink { color: var(--pink); }
+
+    .tagline {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 22px 0 64px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      color: var(--brown);
+    }
+
+    .section-copy {
+      max-width: 720px;
+      color: #6a5760;
+    }
+
+    .products,
+    .features,
+    .social-grid,
+    .phrase-grid,
+    .young-grid,
+    .faq-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .products {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .phrase-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .young-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .product-card,
+    .feature-card,
+    .social-card,
+    .phrase-card,
+    .young-card,
+    .faq-card {
+      padding: 22px;
+    }
+
+    .product-top,
+    .young-top {
+      height: 220px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fde9f2, #fffefe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      border: 1px solid rgba(217, 108, 160, 0.14);
+      text-align: center;
+      padding: 14px;
+      overflow: hidden;
+    }
+
+    .product-top img,
+    .young-top img {
+      max-width: 100%;
+      max-height: 190px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .product-card h3,
+    .feature-card h3,
+    .social-card h3,
+    .phrase-card h3,
+    .young-card h3,
+    .faq-card h3 {
+      margin: 0 0 10px;
+      color: var(--brown);
+    }
+
+    .feature-card p,
+    .social-card p,
+    .phrase-card p,
+    .young-card p,
+    .faq-card p,
+    .product-card p {
+      margin: 0;
+      color: #5f4b55;
+    }
+
+    .price {
+      font-weight: 800;
+      color: var(--pink-dark);
+      margin-top: 12px;
+    }
+
+    .features {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem;
+      background: var(--soft);
+      margin-bottom: 14px;
+    }
+
+    .about-long {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-long p {
+      margin: 0;
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: #5f4b55;
+    }
+
+    .phrase-card {
+      text-align: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(253,232,241,0.8));
+    }
+
+    .phrase-title {
+      color: var(--pink-dark);
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .newsletter {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      background: linear-gradient(135deg, #4c362d, #6b4b57);
+      color: white;
+    }
+
+    .newsletter h3 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    input[type="email"] {
+      min-width: 260px;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 18px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    button {
+      border: none;
+      font: inherit;
+    }
+
+    .social-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .social-icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(76, 54, 45, 0.16);
+      color: var(--brown);
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .social-icon-link:hover {
+      transform: translateY(-1px);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .social-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 22px;
+    }
+
+    .social-icon svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+      fill: currentColor;
+    }
+
+    .footer-inline-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-inline-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      padding: 28px 0 48px;
+      color: #735d66;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(217, 108, 160, 0.15);
+      padding-top: 22px;
+    }
+
+    @media (max-width: 1100px) {
+      .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .phrase-grid,
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .newsletter,
+      .features,
+      .social-grid,
+      .young-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links { display: none; }
+
+      .newsletter-form { justify-content: flex-start; }
+
+      .top-icon { width: 140px; }
+    }
+
+    @media (max-width: 640px) {
+      .products { grid-template-columns: 1fr; }
+
+      .nav { flex-wrap: wrap; }
+
+      .cta-btn,
+      .hero-cta,
+      .secondary-btn { width: 100%; }
+
+      input[type="email"] { min-width: 100%; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Brand",
+      "name":"WeLuvLax",
+      "url":"https://weluvlax.com/",
+      "logo":"https://weluvlax.com/icon-heart.png",
+      "description":"Preppy feminine lacrosse apparel built around power and finesse, heart and grace, and a real love of the girls game."
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo">We<span>Luv</span>Lax</a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#phrases">Phrases</a>
+        <a href="#young">Girls Styles</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#shop" class="cta-btn">See the Collection</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Preppy feminine lacrosse apparel</div>
+          <h1>Power and Finesse</h1>
+          <p>
+            Built with heart by a dad of daughters, WeLuvLax is a playful polished lacrosse lifestyle brand for girls who love the game for its beauty, skill, strength, and spirit. It is meant to reflect the girls game honestly with femininity, confidence, warrior energy, and real pride.
+          </p>
+          <div class="hero-actions">
+            <a href="#shop" class="hero-cta">See Featured Pieces</a>
+            <a href="#phrases" class="secondary-btn">See Brand Phrases</a>
+          </div>
+          <div class="hero-note">
+            WeLuvLax celebrates the balance that makes the girls game special. Power and Finesse. Luv the Game. Play with Heart Win with Grace.
+          </div>
+          <div class="tag-row">
+            <div class="tag">Power and Finesse</div>
+            <div class="tag">Luv the Game</div>
+            <div class="tag">Play with Heart Win with Grace</div>
+          </div>
+        </div>
+
+        <div class="card hero-visual">
+          <div class="hero-stack">
+            <div class="mockup dark">
+              <div class="mini-label">Signature identity</div>
+              <div class="top-icon-wrap">
+                <img src="icon-heart.png" alt="WeLuvLax icon" class="top-icon" />
+              </div>
+              <div class="big-brand large">
+                We<span class="pink">Luv</span>Lax
+              </div>
+              <div class="tagline">Power and Finesse<br>Luv the Game<br>Play with Heart Win with Grace</div>
+            </div>
+
+            <div class="mockup">
+              <div class="mini-label">Brand feel</div>
+              <div class="big-brand" style="font-size: 1.8rem; color: var(--brown);">
+                Strong. Feminine. Fierce.
+              </div>
+              <div class="tagline">
+                Clean pieces inspired by girls lacrosse, team pride, family support, and the beauty and strength of the sport.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Featured Pieces</h2>
+            <div class="section-copy">
+              Your core sweatshirts are still the foundation. The wording is now cleaner and tied directly to the brand phrases you chose.
+            </div>
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="cream-full-logo-crewneck.png" alt="Cream full logo crewneck" />
+            </div>
+            <h3>Cream Crewneck</h3>
+            <p>
+              A soft neutral staple with the signature WeLuvLax look. Perfect for a clean feminine statement and easy everyday wear.
+            </p>
+            <div class="price">Power and Finesse</div>
+          </div>
+
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="black-full-logo-crewneck.png" alt="Black full logo crewneck" />
+            </div>
+            <h3>Black Crewneck</h3>
+            <p>
+              A stronger bolder option that lets the pink logo stand out while keeping the overall look polished and elevated.
+            </p>
+            <div class="price">Luv the Game</div>
+          </div>
+
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="carolina-blue-full-logo-crewneck.png" alt="Carolina blue full logo crewneck" />
+            </div>
+            <h3>Carolina Blue Crewneck</h3>
+            <p>
+              Bright sporty and soft with a youthful energy that feels true to the girls game and easy to style.
+            </p>
+            <div class="price">Play with Heart Win with Grace</div>
+          </div>
+
+          <div class="card product-card">
+            <div class="product-top">
+              <img src="chest-crewnecks-group.png" alt="Chest logo crew necks group image" />
+            </div>
+            <h3>Chest Logo Crewnecks</h3>
+            <p>
+              Cream Carolina blue and pastel green with a smaller chest placement for a cleaner preppier finish.
+            </p>
+            <div class="price">Signature collection</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="phrases">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Signature Brand Phrases</h2>
+            <div class="section-copy">
+              These are now part of the brand language and can be used across the website, apparel, sleeves, packaging, social content, and future collections.
+            </div>
+          </div>
+        </div>
+
+        <div class="phrase-grid">
+          <div class="card phrase-card">
+            <div class="phrase-title">Power and Finesse</div>
+            <p>This is the main identity line. It captures the beauty and strength of the girls game in the clearest way.</p>
+          </div>
+          <div class="card phrase-card">
+            <div class="phrase-title">Luv the Game</div>
+            <p>This is the emotional line. It ties directly into the brand name and works especially well for sleeves, hats, totes, and smaller placements.</p>
+          </div>
+          <div class="card phrase-card">
+            <div class="phrase-title">Play with Heart Win with Grace</div>
+            <p>This is the fuller motto. It feels feminine, athletic, classy, and memorable and works beautifully for backs, packaging, and inside neck prints.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="young">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Girls Styles and Future Drops</h2>
+            <div class="section-copy">
+              You mentioned wanting more young girls items and cute womens cut tees. This section helps the site feel more complete and points toward the next phase of the collection.
+            </div>
+          </div>
+        </div>
+
+        <div class="young-grid">
+          <div class="card young-card">
+            <div class="young-top">
+              <img src="icon-heart.png" alt="WeLuvLax icon" />
+            </div>
+            <h3>Girls Tanks</h3>
+            <p>
+              Soft fitted tanks with the WeLuvLax logo on the front and Power and Finesse or Play with Heart Win with Grace on the back.
+            </p>
+          </div>
+
+          <div class="card young-card">
+            <div class="young-top">
+              <img src="icon-heart.png" alt="WeLuvLax icon" />
+            </div>
+            <h3>Fitted Womens Tees</h3>
+            <p>
+              Cute flattering tees with chest logos, sleeve prints that run lengthwise, and smaller phrase placements for a younger more feminine look.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>About WeLuvLax</h2>
+            <div class="section-copy">A brand built from real pride in the girls game.</div>
+          </div>
+        </div>
+
+        <div class="card about-long">
+          <p>
+            Built with heart by a dad of daughters, WeLuvLax is more than just a lacrosse apparel idea. It comes from wanting something that feels true to the girls game and all that it represents. The feminine side. The finesse. The power. The discipline. The warrior spirit. Too much sports gear feels generic, overly aggressive, or disconnected from the actual culture around girls lacrosse. WeLuvLax is meant to feel different. It is for players who love the sport, for families who live on the sidelines and at tournaments, and for anyone who wants apparel and accessories that reflect the energy, pride, heart, and grace that surround the game.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="card feature-card">
+            <div class="icon">♡</div>
+            <h3>Feminine Identity</h3>
+            <p>
+              A softer polished identity that still carries strength, confidence, and personality.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon">🥍</div>
+            <h3>Girls Game Spirit</h3>
+            <p>
+              Built around real girls lacrosse culture, family pride, and the balance of power and finesse.
+            </p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="icon">✦</div>
+            <h3>Heart and Grace</h3>
+            <p>
+              Apparel that feels giftable, wearable, and rooted in heart, confidence, and composure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card newsletter">
+          <div>
+            <h3>Be first for the launch</h3>
+            <p>
+              Join the list for first access to new sweatshirts, girls tanks, fitted womens tees, and future drops built around the brand phrases.
+            </p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for joining the list. You can connect this form to your email platform later.');">
+            <input type="email" placeholder="Enter your email" required />
+            <button class="cta-btn" type="submit">Join the List</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Community Energy</h2>
+            <div class="section-copy">The website now feels less like a placeholder and more like a real brand with a point of view.</div>
+          </div>
+        </div>
+
+        <div class="social-grid">
+          <div class="card social-card">
+            <h3>Tournament Days</h3>
+            <p>Warmups, sideline style, team pride, and the energy that surrounds girls lacrosse weekends.</p>
+          </div>
+
+          <div class="card social-card">
+            <h3>Team Spirit</h3>
+            <p>Future space for school colors, spirit collections, and special drops built around programs and events.</p>
+          </div>
+
+          <div class="card social-card">
+            <h3>Giftable Favorites</h3>
+            <p>Pieces for players, parents, and supporters who want a cleaner more elevated lacrosse gift option.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Frequently Asked Questions</h2>
+            <div class="section-copy">A cleaner homepage should answer the obvious questions before visitors leave.</div>
+          </div>
+        </div>
+
+        <div class="faq-grid">
+          <div class="card faq-card">
+            <h3>What does WeLuvLax stand for?</h3>
+            <p>It stands for a love of the girls game and the balance that makes it special: power, finesse, heart, grace, and pride.</p>
+          </div>
+          <div class="card faq-card">
+            <h3>Will more items be added?</h3>
+            <p>Yes. Future additions can include girls tanks, fitted womens tees, hats, totes, and more phrase driven pieces.</p>
+          </div>
+          <div class="card faq-card">
+            <h3>Can the brand phrases appear on different items?</h3>
+            <p>Yes. Power and Finesse, Luv the Game, and Play with Heart Win with Grace are designed to work across different placements and collections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="card" style="padding: 28px; margin-bottom: 22px;">
+        <h2 style="margin-top: 0; color: var(--brown);">Follow WeLuvLax</h2>
+        <p style="color: #6f5a64; margin-bottom: 18px;">Connect with the brand across social and email.</p>
+
+        <div class="social-links">
+          <a class="social-icon-link" href="https://instagram.com/weluvlax" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2z"/></svg>
+            </span>
+            <span>Instagram</span>
+          </a>
+
+          <a class="social-icon-link" href="mailto:hello@weluvlax.com" aria-label="Email">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.35l9 6.3 9-6.3V7H3zm18 10V9.95l-8.43 5.9a1 1 0 0 1-1.14 0L3 9.95V17h18z"/></svg>
+            </span>
+            <span>Email</span>
+          </a>
+
+          <a class="social-icon-link" href="https://x.com/weluvlax" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-7.4L5.58 22H2.46l7.24-8.28L1 2h6.4l4.43 6.74L18.9 2zm-1.1 18h1.73L6.45 3.9H4.6L17.8 20z"/></svg>
+            </span>
+            <span>X</span>
+          </a>
+
+          <a class="social-icon-link" href="https://tiktok.com/@shopweluvlax" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <span class="social-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 2h3.05c.24 1.98 1.33 3.55 3.45 3.82v3.1c-1.48-.05-2.84-.46-4-1.2v7.18a6.3 6.3 0 1 1-6.3-6.3c.3 0 .6.03.9.08v3.2a3.24 3.24 0 0 0-.9-.13 3.15 3.15 0 1 0 3.15 3.15V2z"/></svg>
+            </span>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-row">
+        <div><strong>WeLuvLax</strong> — Power and Finesse. Luv the Game. Play with Heart Win with Grace.</div>
+        <div class="footer-inline-links">
+          <a href="https://instagram.com/weluvlax" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:hello@weluvlax.com">hello@weluvlax.com</a>
+          <a href="https://x.com/weluvlax" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://tiktok.com/@shopweluvlax" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
